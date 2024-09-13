@@ -20,5 +20,10 @@ tauri-plugin-shell = "2.0.0-rc"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
-xs = { git = "https://github.com/cablehead/xs.git", branch = "main" }
+# xs = { git = "https://github.com/cablehead/xs.git", branch = "main" }
+xs = { path = "/Users/andy/s/03BKRZUEAK5U4GIA2V7GTWPLM/xs" }
+
 tokio = { version = "1.40.0", features = ["rt", "time"] }
+scru128 = { version = "3.1.0", features = ["serde"] }
+
+

@@ -10,30 +10,29 @@ function App() {
     const currentTime = new Date().toLocaleTimeString();
     onEvent.onmessage = (message) => {
       console.log(currentTime, "Received message:", message);
-      setItems((prev) => [...prev, message]);
+      setItems((prev) => [message, ...prev]);
     };
 
     try {
       await invoke("stream_items", { onEvent });
+      console.log("Subscribed:", onEvent);
     } catch (error) {
       console.error("Error invoking stream_items:", error);
     }
-
-    console.log("Subscribed:", onEvent);
   };
 
   streamItems();
 
   onCleanup(() => {
-    console.log("Cleaning up subscription", onEvent);
+    invoke("stream_items_stop", { id: onEvent.id });
   });
 
   return (
     <main>
-      <h1>Welcome to Tauri!</h1>
+      <p>stream</p>
       <ul>
         <For each={items()}>
-          {(item) => <li>{item.message}</li>}
+          {(item) => <li>{item.topic}</li>}
         </For>
       </ul>
     </main>

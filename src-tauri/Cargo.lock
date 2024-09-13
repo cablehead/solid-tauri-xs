@@ -5439,6 +5439,7 @@ dependencies = [
 name = "solid-xs"
 version = "0.1.0"
 dependencies = [
+ "scru128",
  "serde",
  "serde_json",
  "tauri",
@@ -7546,7 +7547,6 @@ dependencies = [
 [[package]]
 name = "xs"
 version = "0.1.0"
-source = "git+https://github.com/cablehead/xs.git?branch=main#677745a67be653fc856042c4336e91cd5947bd1f"
 dependencies = [
  "async-std",
  "bon",
