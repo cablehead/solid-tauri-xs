@@ -1,5 +1,5 @@
 {
-  "productName": "stacks2",
+  "productName": "solid-xs",
   "version": "0.1.0",
   "identifier": "stream.cross.stacks",
   "build": {
@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "stacks2",
+        "title": "solid-xs",
         "width": 800,
         "height": 600,
         "title": "",

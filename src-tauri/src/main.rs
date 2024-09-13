@@ -5,5 +5,5 @@ use xs::store::Store;
 
 fn main() {
     let store = Store::spawn("./store".into());
-    stacks2_lib::run()
+    solid_xs::run()
 }
