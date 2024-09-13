@@ -1,7 +1,7 @@
-# Tauri + Solid + Typescript
+# xs + Solid + Tauri == Stacks v2
 
-This template should help get you started developing with Tauri, Solid and Typescript in Vite.
+This is a [Solid](https://www.solidjs.com) / [Tauri 2.0
+RC](https://v2.tauri.app/blog/tauri-2-0-0-release-candidate/) frontend for
+[`xs`](https://github.com/cablehead/xs). The [idea] is this will evolve to
+become [Stacks](https://stacks.cross.stream).
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
