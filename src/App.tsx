@@ -5,11 +5,10 @@ import { invoke } from "@tauri-apps/api/core";
 import "./App.css";
 
 function App() {
-
   return (
-    <div class="container">
+    <main>
       <h1>Welcome to Tauri!</h1>
-    </div>
+    </main>
   );
 }
 
