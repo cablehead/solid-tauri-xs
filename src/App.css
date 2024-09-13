@@ -1,40 +1,49 @@
-
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --base03: #002b36;
+  --base02: #073642;
+  --base01: #586e75;
+  --base00: #657b83;
+  --base0: #839496;
+  --base1: #93a1a1;
+  --base2: #eee8d5;
+  --base3: #fdf6e3;
+  --yellow: #b58900;
+  --orange: #cb4b16;
+  --red: #dc322f;
+  --magenta: #d33682;
+  --violet: #6c71c4;
+  --blue: #268bd2;
+  --cyan: #2aa198;
+  --green: #859900;
 
-  color: #0f0f0f;
-  background-color: #f6f6f6;
+  --paragraph-color: var(--base0);
+  --accent-paragraph-color: var(--base1);
+  --headline-color: var(--base00);
+  --background-color: var(--base3);
+  --link-color: var(--blue);
+  --shadow-color: rgba(0, 0, 0, 0.7);
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+html[data-theme="dark"] {
+  --paragraph-color: var(--base0);
+  --accent-paragraph-color: var(--base1);
+  --headline-color: var(--base1);
+  --background-color: var(--base03);
+  --link-color: var(--blue);
+  --shadow-color: rgba(100, 255, 255, 0.7);
+}
+
+body {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1em;
+  background-color: var(--background-color);
+  color: var(--paragraph-color);
+  font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
 main {
-    margin-top: 4em;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #f6f6f6;
-    background-color: #2f2f2f;
-  }
-
-  a:hover {
-    color: #24c8db;
-  }
-
-  input,
-  button {
-    color: #ffffff;
-    background-color: #0f0f0f98;
-  }
-  button:active {
-    background-color: #0f0f0f69;
-  }
+  margin-top: 4em;
 }
